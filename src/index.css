@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-background: var(--bg-color);
   --color-foreground: var(--fg-color);
   --color-card: var(--card-bg);
@@ -31,6 +32,6 @@
   body {
     background-color: var(--bg-color);
     color: var(--fg-color);
-    @apply antialiased selection:bg-blue-100 selection:text-blue-900 dark:selection:bg-blue-900/40 dark:selection:text-blue-100 transition-colors duration-300;
+    @apply antialiased selection:bg-emerald-100 selection:text-emerald-900 dark:selection:bg-emerald-900/40 dark:selection:text-emerald-100 transition-colors duration-300;
   }
 }

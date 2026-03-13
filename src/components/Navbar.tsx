@@ -7,6 +7,8 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Achievements', href: '#achievements' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Skills', href: '#skills' },
 ];
 
@@ -35,8 +37,14 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 tracking-tighter">
-              BIPLAV_
+            <a href="#" className="flex items-center gap-2 group">
+              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-600 shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 group-hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+                <span className="text-xl font-black text-white tracking-tighter relative z-10">BB</span>
+              </div>
+              <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-4 group-hover:translate-x-0 tracking-tight">
+                Biplav Barua
+              </span>
             </a>
           </div>
 
@@ -47,7 +55,7 @@ export const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-muted hover:text-foreground hover:text-blue-500 transition-colors px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-muted hover:text-foreground hover:text-emerald-500 transition-colors px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {item.label}
                 </a>

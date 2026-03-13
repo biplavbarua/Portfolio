@@ -4,7 +4,9 @@ import { Experience } from './components/Experience';
 import { Education } from './components/Education';
 import { Projects } from './components/Projects';
 import { Achievements } from './components/Achievements';
+import { Certifications } from './components/Certifications';
 import { Skills } from './components/Skills';
+import { About } from './components/About';
 import { Footer } from './components/Footer';
 import { ThemeProvider } from './components/ThemeProvider';
 
@@ -19,7 +21,9 @@ function App() {
           <Education />
           <Projects />
           <Achievements />
+          <Certifications />
           <Skills />
+          <About />
         </main>
         <Footer />
       </div>

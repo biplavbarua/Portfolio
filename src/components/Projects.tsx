@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github, Folder, ExternalLink } from 'lucide-react';
+import { Github, Folder } from 'lucide-react';
 import { cn } from '../utils/cn';
 
 type Category = 'All' | 'Data Science' | 'Web / Full-Stack';
@@ -69,9 +69,9 @@ export const Projects = () => {
         >
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
-              Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Projects</span>
+              Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400">Projects</span>
             </h2>
-            <div className="w-20 h-1 bg-blue-500 rounded-full" />
+            <div className="w-20 h-1 bg-emerald-500 rounded-full" />
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -82,7 +82,7 @@ export const Projects = () => {
                 className={cn(
                   "px-4 py-2 rounded-full text-sm font-medium transition-all duration-300",
                   filter === cat 
-                    ? "bg-blue-600 text-white dark:bg-blue-500" 
+                    ? "bg-emerald-600 text-white dark:bg-emerald-500" 
                     : "bg-slate-100 dark:bg-white/5 text-muted hover:text-foreground hover:bg-slate-200 dark:hover:bg-white/10"
                 )}
               >
@@ -102,7 +102,7 @@ export const Projects = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 key={project.title}
-                className="group relative bg-card border border-border/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-[0_8px_30px_rgb(168,85,247,0.12)] dark:hover:shadow-[0_8px_30px_rgb(192,132,252,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-sm"
+                className="group relative bg-card border border-border/50 rounded-2xl overflow-hidden hover:border-teal-500/30 hover:shadow-[0_8px_30px_rgb(20,184,166,0.12)] dark:hover:shadow-[0_8px_30px_rgb(45,212,191,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-sm"
               >
                 <div className="relative h-48 overflow-hidden">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10" />
@@ -112,7 +112,7 @@ export const Projects = () => {
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4 z-20">
-                    <div className="w-10 h-10 rounded-full bg-background/80 backdrop-blur border border-border flex items-center justify-center text-purple-600 dark:text-purple-400">
+                    <div className="w-10 h-10 rounded-full bg-background/80 backdrop-blur border border-border flex items-center justify-center text-teal-600 dark:text-teal-400">
                       <Folder className="w-5 h-5" />
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export const Projects = () => {
 
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                       {project.title}
                     </h3>
                     <div className="flex gap-3 text-muted">

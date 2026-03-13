@@ -52,12 +52,12 @@ export const Achievements = () => {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
-            Open Source <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">Impact</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600 dark:from-teal-400 dark:to-emerald-400">Achievements</span>
           </h2>
           <p className="text-muted text-lg max-w-2xl">
-            Code accepted and merged into significant open-source projects used by millions.
+            Significant open-source contributions with code accepted and merged into projects used by millions.
           </p>
-          <div className="w-20 h-1 bg-purple-500 rounded-full mt-4" />
+          <div className="w-20 h-1 bg-teal-500 rounded-full mt-4" />
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -68,15 +68,15 @@ export const Achievements = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
               key={index}
-              className="group bg-card border border-border/50 rounded-2xl p-6 md:p-8 hover:border-purple-500/30 hover:shadow-[0_8px_30px_rgb(168,85,247,0.12)] dark:hover:shadow-[0_8px_30px_rgb(192,132,252,0.12)] hover:-translate-y-1 transition-all duration-300 shadow-sm"
+              className="group bg-card border border-border/50 rounded-2xl p-6 md:p-8 hover:border-teal-500/30 hover:shadow-[0_8px_30px_rgb(168,85,247,0.12)] dark:hover:shadow-[0_8px_30px_rgb(192,132,252,0.12)] hover:-translate-y-1 transition-all duration-300 shadow-sm"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="shrink-0 p-3 bg-purple-50 dark:bg-purple-500/10 rounded-xl border border-purple-200 dark:border-purple-500/20 group-hover:scale-110 transition-transform">
-                    <GitMerge className="w-6 h-6 text-purple-500" />
+                  <div className="shrink-0 w-12 h-12 bg-white dark:bg-black rounded-xl border border-teal-200 dark:border-teal-500/20 group-hover:scale-110 transition-transform overflow-hidden flex items-center justify-center p-1 font-bold text-lg">
+                    <img src={`https://github.com/${item.repo.split('/')[0]}.png`} alt={item.project} className="w-full h-full object-contain rounded-lg" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                       {item.project}
                     </h3>
                     <p className="text-sm text-muted font-mono">{item.repo} · ★ {item.stars}</p>
