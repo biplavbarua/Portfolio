@@ -70,6 +70,7 @@ export const Navbar = () => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none"
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
